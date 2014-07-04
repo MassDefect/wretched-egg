@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Keyera Edmonton Terminal</title>
+<!--<link rel="stylesheet" href="js/libs/jqueryui/css/jquery-ui.css">-->
+<link rel="stylesheet" href="examples.css">
+<script src="js/libs/jquery/jquery.js"></script>
+<script src='js/libs/jqueryui/jquery-ui.js'></script>
+<script src="js/libs/typeahead.js/typeahead.jquery.js"></script>
+<script src="examples.js"></script>
+            
+<style>
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color: transparent;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: transparent;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: transparent;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: transparent;
+  }
+}
+
+
+
+@page
+	{margin:.5in .5in .5in .5in;
+	
+	}
+    
+
+.font7
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	}
+.style0
+	{
+	text-align:center;
+	vertical-align:bottom;
+	white-space:nowrap;
+	
+	
+	
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	
+	border:none;
+	
+	
+	}
+td
+	{
+	padding:0px;
+	
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	
+	
+	text-align:center;
+	vertical-align:bottom;
+	border:none;
+	
+	
+	
+	white-space:nowrap;
+	}
+
+.xl65
+	{
+	text-align:center;
+	vertical-align:middle;}
+.xl66
+	{
+	color:windowtext;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;}
+.xl67
+	{
+	text-align:left;
+	vertical-align:middle;}
+.xl68
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	
+	text-align:center;
+	vertical-align:middle;
+	}
+.xl69
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	}
+.xl70
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	}
+.xl71
+	{
+	
+	text-align:center;
+	vertical-align:middle;}
+.xl72
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl73
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	}
+.xl74
+	{
+	color:windowtext;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	}
+.xl75
+	{
+	text-align:center;
+	vertical-align:middle;
+	}
+.xl76
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	
+	text-align:center;
+	vertical-align:middle;
+	}
+.xl77
+	{
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	}
+.xl78
+	{
+	text-align:center;
+	vertical-align:middle;
+	white-space:normal;}
+.xl79
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	white-space:normal;
+	}
+.xl80
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	white-space:normal;}
+.xl81
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;}
+.xl82
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl83
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;}
+.xl84
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl85
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl86
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	text-decoration:underline;
+	font-family:Arial, sans-serif;
+	
+	text-align:left;
+	vertical-align:middle;}
+.xl87
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:left;
+	vertical-align:middle;}
+.xl88
+	{
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	font-family:Arial, sans-serif;
+	
+	text-align:left;
+	vertical-align:middle;}
+.xl89
+	{
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl90
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl91
+	{
+	color:windowtext;
+	vertical-align:middle;}
+.xl92
+	{
+	color:windowtext;
+	font-weight:700;
+	}
+.xl93
+	{
+	color:windowtext;
+	font-weight:700;}
+.xl94
+	{
+	color:windowtext;
+	font-weight:700;
+	vertical-align:middle;}
+.xl95
+	{
+	color:windowtext;}
+.xl96
+	{
+	color:windowtext;
+	}
+.xl97
+	{
+	color:black;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl98
+	{
+	color:black;
+	font-weight:700;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl99
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;}
+.xl100
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;}
+.xl101
+	{
+	color:black;
+	font-weight:700;
+	
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl102
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl103
+	{
+	color:black;
+	font-weight:700;
+	
+	}
+.xl104
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;}
+.xl105
+	{
+	color:black;
+	font-weight:700;}
+.xl106
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:right;}
+.xl107
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	
+	text-align:left;
+	}
+.xl108
+	{
+	color:black;
+	font-weight:700;
+	}
+.xl109
+	{
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-align:center;}
+.xl110
+	{
+	color:black;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;}
+.xl111
+	{
+	color:black;
+	}
+.xl112
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	}
+.xl113
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	}
+.xl114
+	{
+	color:red;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	}
+.xl115
+	{
+	color:red;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	}
+.xl116
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;}
+.xl117
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl118
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	}
+.xl119
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	}
+.xl120
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	}
+.xl121
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl122
+	{
+	color:red;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	}
+.xl123
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:2.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl124
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:2.0pt solid windowtext;
+	border-left:none;
+	
+	white-space:normal;}
+.xl125
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	}
+.xl126
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl127
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	}
+.xl128
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl129
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl130
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	
+	white-space:normal;}
+.xl131
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl132
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	
+	white-space:normal;}
+.xl133
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl134
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	
+	white-space:normal;}
+.xl135
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl136
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:2.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	
+	white-space:normal;}
+.xl137
+	{
+	color:black;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:top;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl138
+	{
+	color:black;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:top;
+	border-top:2.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	
+	white-space:normal;}
+.xl139
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	white-space:normal;}
+.xl140
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl141
+	{
+	color:black;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	white-space:normal;}
+.xl142
+	{
+	color:black;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl143
+	{
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	vertical-align:middle;}
+.xl144
+	{
+	color:black;
+	font-weight:700;
+	
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl145
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	}
+.xl146
+	{
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:right;
+	}
+.xl147
+	{
+	}
+.xl148
+	{
+	color:black;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	}
+.xl149
+	{
+        color:black;
+	font-weight:400;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl150
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	
+	white-space:normal;}
+.xl151
+	{
+	color:black;
+	font-weight:400;
+	//font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	
+	white-space:normal;}
+.xl152
+	{
+	color:black;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:top;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	
+	white-space:normal;}
+.xl153
+	{
+	color:black;
+	font-weight:400;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:2.0pt solid windowtext;
+	}
+.xl154
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:2.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	}
+.xl155
+	{
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-align:center;
+	}
+.xl156
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	}
+.xl157
+	{
+	color:black;
+	font-weight:700;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	}
+.xl158
+	{
+	color:black;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	border-top:2.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:2.0pt solid windowtext;
+	}
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      padding-top: 2%;
+      font-size: 12pt;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      padding-top: 2%;
+      font-size: 12pt;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      padding-top: 2%;
+      font-size: 12pt;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      padding-top: 2%;
+      font-size: 12pt;
+  }
+input[type="text"]
+{
+    width:171px;
+    height:19.0pt;
+    text-align:center;
+    border:none;
+    background-color: transparent;
+    font-family: Helvetica, sans-serif;
+    font-size: 15pt;
+    vertical-align: middle;
+
+}
+
+.carID{}
+.carNum{}
+.prodabf{}
+.prodabr{}
+.prodcdf{}
+.prodcdr{}
+.statabf{}
+.statabr{}
+.statcd{}
+
+</style>
+</head>
+
+<body link=blue vlink=purple class=xl147>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1105 style='border-collapse:
+ collapse;table-layout:fixed;width:1105pt'>
+ <col class=xl147 width=65 span=17 style='width:65pt'>
+ <tr style='height:19.0pt'>
+  <td height=19 class=xl103 width=65 style='height:19.0pt;width:65pt'></td>
+  <td class=xl145 colspan=2 width=130 style='width:130pt'>TRACK LIST for:</td>
+  <td class=xl146 width=65 style='width:65pt'>DATE:</td>
+  <td colspan=3 class=xl112 contenteditable="" width=195 style='width:195pt'></td>
+  <td class=xl146 width=65 style='width:65pt'>TIME:</td>
+  <td class=xl107 contenteditable="" width=65 style='width:65pt'></td>
+  <td class=xl108 width=65 style='width:65pt'></td>
+  <td class=xl146 width=65 style='width:65pt'>TERM OPS:</td>
+  <td colspan=6 class=xl113 contenteditable="" width=390 style='width:390pt'></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;height:17.0pt;border-left:none;width:130pt'></td>
+  <td colspan=2 class=xl137 contenteditable="" width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'></td>
+  <td class=xl148>4-5 Temp</td>
+  <td class=xl98 contenteditable=""></td>
+  <td class=xl148 style='border-top:none'>4-6 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:17.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>4-7 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>4-8 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'><input class="no-print" type="reset" value="Clear Track" name="Done A1" /></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+      width:130pt'><a class="no-print"><input type="submit" value="Done D1" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;border-left:none;width:130pt;'><a class="no-print"><input type="submit" value="Done D2" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+      border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done D3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl151 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done D4" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done D5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
+      none'><a class="no-print"><input type="submit" value="Done D6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done D7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done D8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl155 style='height:19.0pt'>TRACK</td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl155 style='height:15.0pt'>4</td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+ </tr>
+ <tr style='height:18.0pt'>
+  <td class=xl108 style='height:18.0pt'></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;height:17.0pt;border-left:none;width:130pt'></td>
+  <td colspan=2 class=xl135 contenteditable="" width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'></td>
+  <td colspan=2 class=xl137 contenteditable="" width=130 style='border-right:2.0pt solid black;height:17.0pt;border-left:none;width:130pt'></td>
+  <td class=xl148 style='border-top:none'>3-5 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>3-6 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>3-7 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>3-8 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'><input class=no-print type="reset" value="Clear Track" name="Done A1" /></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+      height:17.0pt;width:130pt'><a class="no-print"><input type="submit" value="Done C1" name="Done C1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+  border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C2" name="Done C2" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl149 width=130 style='border-right:2.0pt solid black;
+  height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl151 width=130 style='border-right:2.0pt solid black;
+  border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C4" name="Done C4" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:17.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done C8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl155 style='height:19.0pt'>TRACK</td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl155 style='height:15.0pt'>3</td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td colspan=2 rowspan=4 class=xl129 contenteditable="" width=130 style='border-right:2.0pt solid black;width:130pt'></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl133 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl123 width=130 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class='prodcdf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodcdr'/></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl108 style='height:17.0pt'></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+  <td colspan=2 class=xl122 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl158 style='border-top:none'>2-1 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>2-2 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>2-3 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>2-4 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>2-5 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>2-6 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>2-7 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>2-8 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'><input class=no-print type="reset" value="Clear Track" name="Done A1" /></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+      height:15.0pt;width:130pt;'><a class="no-print"><input type="submit" onclick="doneb1()" value="Done B1" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B2" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
+  none'><a class="no-print"><input type="submit" value="Done B3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B4" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
+  none'><a class="no-print"><input type="submit" value="Done B5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
+  none'><a class="no-print"><input type="submit" value="Done B6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;
+  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
+  none'><a class="no-print"><input type="submit" value="Done B8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl155 style='height:19.0pt'>TRACK</td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl155 style='height:15.0pt'>2</td>
+  <td class=xl156 style='border-top:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl144 style='border-top:none'></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl111 style='height:15.0pt'></td>
+  <td class=xl157>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl111 style='height:19.0pt'></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input onfocus="this.pl" type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 contenteditable="" style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl111 style='height:19.0pt'></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+ </tr>
+ <tr style='height:18.0pt'>
+  <td class=xl108 style='height:18.0pt'></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+  <td colspan=2 class=xl115 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl158 style='border-top:none'>1-1 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>1-2 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>1-3 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>1-4 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>1-5 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>1-6 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+  <td class=xl148 style='border-top:none'>1-7 Temp</td>
+  <td class=xl98 contenteditable="" style='border-top:none'></td>
+  <td class=xl148 style='border-top:none'>1-8 Temp</td>
+  <td class=xl98 contenteditable="" width=65 style='height:15.0pt;border-top:none;width:65pt'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'><input class=no-print type="reset" value="Clear Track" name="Done A1" /></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;height:15.0pt;width:130pt'><a class="no-print"><input type="submit" value="Done A1" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done A2" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done A3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done A4" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done A5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done A6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 width=130 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done A7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done A8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl108 style='height:19.0pt'></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+  <td colspan=2 class=xl125 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car ID' class='carID'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl155 style='height:19.0pt'>TRACK</td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+  <td colspan=2 class=xl120 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Car Number' class='carNum'/></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl155 style='height:15.0pt'>1</td>
+  <td class=xl156 style='border-top:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl144 style='border-top:none'></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+  <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable=""></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl108 style='height:15.0pt'></td>
+  <td class=xl157>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Seal #</td>
+  <td class=xl101 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td class=xl111 style='height:15.0pt'></td>
+  <td class=xl157>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+  <td class=xl157 style='border-left:none'>Outage</td>
+  <td class=xl102 contenteditable="" style='border-top:none'></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl111 style='height:19.0pt'></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input onfocus="this.placeholder=''" onblur="this.placeholder='Status'" type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr'/></td>
+ </tr>
+ <tr style='height:19.0pt'>
+  <td class=xl111 style='height:19.0pt'></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input onfocus="this.placeholder=''" onblur="this.placeholder='Status'" type="text" placeholder='Product' class="typeahead"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabf'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class='prodabr'/></td>
+ </tr>
+ <tr style='height:17.0pt'>
+  <td class=xl111 style='height:17.0pt'></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+  <td colspan=2 class=xl114 contenteditable=""></td>
+ </tr>
+</table>
+
+<!--<script>
+var tags = [ "ACFX", "AGLX", "BBSX", "BRSX", "BTRX", "CTCX", "CBTX", "CFL", "CGTX", "CONX", "CRPX", "DBUX", "EPCX",
+             "GATX", "GAMX", "GLNX", "HOMX", "JJJX", "JJRX", "MBLX", "NATX", "PROX", "PLMX", "PPRX", "PVIX", "SAUX",
+             "SHPX", "SHQX", "SRIX", "TACX", "TEIX", "TILX", "TJRX", "UTLX"];
+$( ".carID" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags1 = [ "C3", "C3O", "IC8"];
+$( ".prodabf" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags1, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags2 = [ "C3", "C3O", "IC8", "FC4", "NC4", "OC4", "IC4", "NGL", "C3/C3O", "C3/C3", "C3/FC4", "FC4/C3O", "FC4/C3", "FC4/FC4",
+             "NC4/C3O", "NC4/C3", "NC4/FC4", "OC4/C3O", "OC4/C3", "OC4/FC4"];
+$( ".prodabr" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags2, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags3 = [ "C3", "C3O", "IC8", "FC4", "NC4", "OC4", "IC4", "NGL"];
+$( ".prodcdf" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags3, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags4 = [ "IC8", "FC4", "NC4", "OC4", "IC4" ];
+$( ".prodcdr" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags4, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags5 = [ "Load", "Offload", "Empty", "Bad Order - MT", "Bad Order - LD" ];
+$( ".statcd" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags5, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags6 = [ "Load", "Empty", "Bad Order - MT", "Bad Order - LD" ];
+$( ".statabf" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags6, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+var tags7 = [ "Load", "Offload", "Empty", "Bad Order - MT", "Bad Order - LD", "Offload/Reload" ];
+$( ".statabr" ).autocomplete({
+  source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( tags7, function( item ){
+              return matcher.test( item );
+          }) );
+      }
+});
+</script>-->
+</body>
+
+</html>
