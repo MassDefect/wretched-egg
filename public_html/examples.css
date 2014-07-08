@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .table-of-contents li {
@@ -73,6 +73,14 @@ p + p {
 }
 
 .typeahead,
+.typeaheadID,
+.statabf,
+.statabr,
+.statcd,
+.prodabf,
+.prodabr,
+.prodcdf,
+.prodcdr,
 .tt-query,
 .tt-hint {
   width: 500px;
@@ -90,7 +98,15 @@ p + p {
   background-color: #fff;
 }
 
-.typeahead:focus {
+.typeaheadID:focus,
+.typeahead:focus 
+.statabf:focus,
+.statabr:focus,
+.statcd:focus,
+.prodabf:focus,
+.prodabr:focus,
+.prodcdf:focus,
+.prodcdr:focus {
   //border: 2px solid #0097cf;
   outline: auto;
   outline-color: activeborder;

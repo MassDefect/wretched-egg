@@ -1,4 +1,4 @@
-/*!
+ /*!
  * typeahead.js 0.10.2
  * https://github.com/twitter/typeahead.js
  * Copyright 2013-2014 Twitter, Inc. and other contributors; Licensed MIT
@@ -407,7 +407,7 @@
                   case "tab":
                     hintValue = this.getHint();
                     inputValue = this.getInputValue();
-                    preventDefault = hintValue && hintValue !== inputValue && !withModifier($e);
+                    //preventDefault = hintValue && hintValue !== inputValue && !withModifier($e);
                     break;
 
                   case "up":

@@ -1065,6 +1065,22 @@ input[type="text"]
 </head>
 
 <body link=blue vlink=purple class=xl147>
+    
+<script>
+function enterKey()
+{
+if(window.event===13) // IE8 and earlier
+	{
+        document.getElementById("sld52").focus();
+        event.preventDefault();
+	}
+else if(event.which===13) // IE9/Firefox/Chrome/Opera/Safari
+	{
+        document.getElementById("sld52").focus();
+        event.preventDefault();
+        }
+}
+</script>
 
 <table border=0 cellpadding=0 cellspacing=0 style='border-collapse:collapse;table-layout:fixed;width:1105pt'>
  <col class=xl147 span=17 style='width:65pt'>
@@ -1134,9 +1150,9 @@ input[type="text"]
   <td colspan=2 rowspan=4 class=xl129 contenteditable="" style='border-right:2.0pt solid black;width:130pt'></td>
   <td colspan=2 rowspan=4 class=xl129 contenteditable="" style='border-right:2.0pt solid black;width:130pt'></td>
   <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
-  <td class=xl101 contenteditable=""></td>
+  <td class=xl101 contenteditable="" onkeypress="enterKey()"></td>
   <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
-  <td class=xl101 contenteditable=""></td>
+  <td class=xl101 contenteditable="" onfocus="select()" id="sld52"></td>
   <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
   <td class=xl101 contenteditable=""></td>
   <td class=xl156 style='border-top:none;border-left:none'>Seal #</td>
@@ -1188,14 +1204,14 @@ input[type="text"]
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl108 style='height:19.0pt'></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
  </tr>
  <tr style='height:18.0pt'>
   <td class=xl108 style='height:18.0pt'></td>
@@ -1306,25 +1322,25 @@ input[type="text"]
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl108 style='height:19.0pt'></td>
-  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl133 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statcd' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"/></td>
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl108 style='height:19.0pt'></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl123 style='border-right:2.0pt solid black;border-left:none;width:130pt'><input type="text" placeholder='Product' class="prodcdf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodcdr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
  </tr>
  <tr style='height:17.0pt'>
   <td class=xl108 style='height:17.0pt'></td>
@@ -1369,22 +1385,14 @@ input[type="text"]
  </tr>
  <tr style='height:15.0pt'>
   <td class=xl108 style='height:15.0pt'><input class=no-print type="reset" value="Clear Track" name="Done A1" /></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;
-      height:15.0pt;width:130pt;'><a class="no-print"><input type="submit" onclick="doneb1()" value="Done B1" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;
-  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B2" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
-  none'><a class="no-print"><input type="submit" value="Done B3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;
-  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B4" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
-  none'><a class="no-print"><input type="submit" value="Done B5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
-  none'><a class="no-print"><input type="submit" value="Done B6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;
-  height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
-  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:
-  none'><a class="no-print"><input type="submit" value="Done B8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;height:15.0pt;width:130pt;'><a class="no-print"><input type="submit" onclick="doneb1()" value="Done B1" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B2" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done B3" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B4" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done B5" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done B6" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;height:15.0pt;border-left:none;width:130pt'><a class="no-print"><input type="submit" value="Done B7" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
+  <td colspan=2 class=xl153 style='border-right:2.0pt solid black;border-left:none'><a class="no-print"><input type="submit" value="Done B8" name="Done A1" /><input type="checkbox" name="CN" value="ON" />CN<input type="checkbox" name="CP" value="ON" />CP</a></td>
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl108 style='height:19.0pt'></td>
@@ -1486,25 +1494,25 @@ input[type="text"]
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl111 style='height:19.0pt'></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl111 style='height:19.0pt'></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
-  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="typeahead" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black'><input type="text" placeholder='Product' class="prodabf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabf" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
+  <td colspan=2 class=xl118 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Product' class="prodabr" onfocus="this.placeholder=''" onblur="this.placeholder='Product'"></td>
  </tr>
  <tr style='height:18.0pt'>
   <td class=xl108 style='height:18.0pt'></td>
@@ -1647,14 +1655,14 @@ input[type="text"]
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl111 style='height:19.0pt'></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'" /></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
-  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='typeahead' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'" /></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabf' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
+  <td colspan=2 class=xl127 style='border-right:2.0pt solid black;border-left:none'><input type="text" placeholder='Status' class='statabr' onfocus="this.placeholder=''" onblur="this.placeholder='Status'"></td>
  </tr>
  <tr style='height:19.0pt'>
   <td class=xl111 style='height:19.0pt'></td>
